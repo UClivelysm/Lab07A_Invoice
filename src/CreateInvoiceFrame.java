@@ -36,17 +36,15 @@ public class CreateInvoiceFrame extends JFrame {
     JScrollPane lineItemScroller;
 
     public CreateInvoiceFrame() {
-        setTitle("Create Invoice");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(700,500);
+
         mainPanel = new JPanel();
         mainPanel.setLayout(new BorderLayout());
 
-        titleLabel = new JLabel("Create Invoice");
-//        titleLabel.setVerticalTextPosition(JLabel.BOTTOM);
-        titleLabel.setHorizontalTextPosition(JLabel.CENTER);
-
-        mainPanel.add(titleLabel, BorderLayout.NORTH);
+//        titleLabel = new JLabel("Create Invoice");
+////        titleLabel.setVerticalTextPosition(JLabel.BOTTOM);
+//        titleLabel.setHorizontalTextPosition(JLabel.CENTER);
+//
+//        mainPanel.add(titleLabel, BorderLayout.NORTH);
 
 
         createInvoicePanel();
@@ -57,7 +55,8 @@ public class CreateInvoiceFrame extends JFrame {
 
         add(mainPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(700,1000);
+        setSize(700,650);
+        setTitle("Create Invoice");
         setVisible(true);
 
     }
@@ -118,6 +117,7 @@ public class CreateInvoiceFrame extends JFrame {
         addLineItemPanel.setLayout(new GridLayout(2,1));
 
         lineItemTA = new JTextArea(10, 50);
+        lineItemTA.setFont(new Font("Ubuntu Mono", Font.PLAIN, 15));
         lineItemTA.setEditable(false);
         lineItemScroller = new JScrollPane(lineItemTA);
         addLineItemPanel.add(lineItemScroller);
