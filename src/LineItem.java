@@ -1,30 +1,4 @@
-//public class LineItem {
-//    private Product product;
-//    private int quantity;
-//
-//    public LineItem(Product product, int quantity) {
-//        this.product = product;
-//        this.quantity = quantity;
-//    }
-//
-//    public Product getProduct() {
-//        return product;
-//    }
-//
-//    public int getQuantity() {
-//        return quantity;
-//    }
-//    public double calcLineTotal() {
-//        return product.getUnitPrice() * quantity;
-//    }
-//    public String getFormattedString() {
-//        String formattedString = "";
-//
-//
-//
-//        return formattedString;
-//    }
-//}
+
 import java.text.DecimalFormat;
 
 public class LineItem {
@@ -52,5 +26,7 @@ public class LineItem {
                 df.format(this.product.getUnitPrice()),
                 df.format(calcLineTotal()));
     }
+
+
 }
 
