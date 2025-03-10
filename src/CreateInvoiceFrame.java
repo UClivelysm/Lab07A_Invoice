@@ -41,7 +41,7 @@ public class CreateInvoiceFrame extends JFrame {
         mainPanel.setLayout(new BorderLayout());
 
 //        titleLabel = new JLabel("Create Invoice");
-////        titleLabel.setVerticalTextPosition(JLabel.BOTTOM);
+//        titleLabel.setVerticalTextPosition(JLabel.BOTTOM);
 //        titleLabel.setHorizontalTextPosition(JLabel.CENTER);
 //
 //        mainPanel.add(titleLabel, BorderLayout.NORTH);
