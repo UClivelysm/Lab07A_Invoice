@@ -41,7 +41,7 @@ public class CreateInvoiceFrame extends JFrame {
         mainPanel.setLayout(new BorderLayout());
 
 //        titleLabel = new JLabel("Create Invoice");
-//        titleLabel.setVerticalTextPosition(JLabel.BOTTOM);
+////        titleLabel.setVerticalTextPosition(JLabel.BOTTOM);
 //        titleLabel.setHorizontalTextPosition(JLabel.CENTER);
 //
 //        mainPanel.add(titleLabel, BorderLayout.NORTH);
@@ -67,9 +67,9 @@ public class CreateInvoiceFrame extends JFrame {
 
 
         invoicePanel.setLayout(new FlowLayout(FlowLayout.CENTER));
-        titleLabel = new JLabel("Create Invoice");
-        titleLabel.setVerticalTextPosition(JLabel.TOP);
-        titleLabel.setHorizontalTextPosition(JLabel.CENTER);
+//        titleLabel = new JLabel("Create Invoice");
+//        titleLabel.setVerticalTextPosition(JLabel.TOP);
+//        titleLabel.setHorizontalTextPosition(JLabel.CENTER);
 
         addressPanel = new JPanel();
         addressPanel.setLayout(new GridLayout(5,2));
@@ -116,8 +116,8 @@ public class CreateInvoiceFrame extends JFrame {
         addLineItemPanel = new JPanel();
         addLineItemPanel.setLayout(new GridLayout(2,1));
 
-        lineItemTA = new JTextArea(10, 50);
-        lineItemTA.setFont(new Font("Ubuntu Mono", Font.PLAIN, 15));
+        lineItemTA = new JTextArea(10, 60);
+        lineItemTA.setFont(new Font("Ubuntu Mono", Font.PLAIN, 16));
         lineItemTA.setEditable(false);
         lineItemScroller = new JScrollPane(lineItemTA);
         addLineItemPanel.add(lineItemScroller);
